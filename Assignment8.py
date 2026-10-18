@@ -1,0 +1,226 @@
+scrabble = [
+    "a",
+    1,
+    9,
+    4.8,
+    "b",
+    3,
+    2,
+    3.2,
+    "c",
+    3,
+    2,
+    3.2,
+    "d",
+    2,
+    4,
+    4.3,
+    "e",
+    1,
+    12,
+    6.4,
+    "f",
+    4,
+    2,
+    4.3,
+    "g",
+    2,
+    3,
+    3.2,
+    "h",
+    4,
+    2,
+    4.3,
+    "i",
+    1,
+    9,
+    4.8,
+    "j",
+    8,
+    1,
+    4.3,
+    "k",
+    5,
+    1,
+    2.7,
+    "l",
+    1,
+    4,
+    2.1,
+    "m",
+    3,
+    2,
+    3.2,
+    "n",
+    1,
+    6,
+    3.2,
+    "o",
+    1,
+    8,
+    4.3,
+    "p",
+    3,
+    2,
+    3.2,
+    "q",
+    10,
+    1,
+    5.3,
+    "r",
+    1,
+    6,
+    3.2,
+    "s",
+    1,
+    4,
+    2.1,
+    "t",
+    1,
+    6,
+    3.2,
+    "u",
+    1,
+    4,
+    2.1,
+    "v",
+    4,
+    2,
+    4.3,
+    "w",
+    4,
+    2,
+    4.3,
+    "x",
+    8,
+    1,
+    4.3,
+    "y",
+    4,
+    2,
+    4.3,
+    "z",
+    10,
+    1,
+    5.3,
+]
+
+letters = scrabble[::4]
+# print(letters)
+points = scrabble[1::4]
+# print(points)
+amounts = scrabble[2::4]
+# print(amounts)
+ratios = scrabble[3::4]
+# print(ratios)
+
+points_pairs = [
+    [letters[0], points[0]],
+    [letters[1], points[1]],
+    [letters[2], points[2]],
+    [letters[3], points[3]],
+    [letters[4], points[4]],
+    [letters[5], points[5]],
+    [letters[6], points[6]],
+    [letters[7], points[7]],
+    [letters[8], points[8]],
+    [letters[9], points[9]],
+    [letters[10], points[10]],
+    [letters[11], points[11]],
+    [letters[12], points[12]],
+    [letters[13], points[13]],
+    [letters[14], points[14]],
+    [letters[15], points[15]],
+    [letters[16], points[16]],
+    [letters[17], points[17]],
+    [letters[18], points[18]],
+    [letters[19], points[19]],
+    [letters[20], points[20]],
+    [letters[21], points[21]],
+    [letters[22], points[22]],
+    [letters[23], points[23]],
+    [letters[24], points[24]],
+    [letters[25], points[25]],
+]
+# print(points_pairs)
+points_pairs.sort(key=lambda x: x[1], reverse=True)
+# print(points_pairs)
+
+print("The highest point in the scramble game:")
+print('\t1) "{}" with {} points.'.format(points_pairs[0][0], points_pairs[0][1]))
+print('\t2) "{}" with {} points.'.format(points_pairs[1][0], points_pairs[1][1]))
+print('\t3) "{}" with {} points.'.format(points_pairs[2][0], points_pairs[2][1]))
+print('\t4) "{}" with {} points.'.format(points_pairs[3][0], points_pairs[3][1]))
+
+amounts_pairs = [
+    [letters[0], amounts[0]],
+    [letters[1], amounts[1]],
+    [letters[2], amounts[2]],
+    [letters[3], amounts[3]],
+    [letters[4], amounts[4]],
+    [letters[5], amounts[5]],
+    [letters[6], amounts[6]],
+    [letters[7], amounts[7]],
+    [letters[8], amounts[8]],
+    [letters[9], amounts[9]],
+    [letters[10], amounts[10]],
+    [letters[11], amounts[11]],
+    [letters[12], amounts[12]],
+    [letters[13], amounts[13]],
+    [letters[14], amounts[14]],
+    [letters[15], amounts[15]],
+    [letters[16], amounts[16]],
+    [letters[17], amounts[17]],
+    [letters[18], amounts[18]],
+    [letters[19], amounts[19]],
+    [letters[20], amounts[20]],
+    [letters[21], amounts[21]],
+    [letters[22], amounts[22]],
+    [letters[23], amounts[23]],
+    [letters[24], amounts[24]],
+    [letters[25], amounts[25]],
+]
+# print(amounts_pairs)
+amounts_pairs.sort(key=lambda x: x[1], reverse=True)
+
+print("The highest amount in the scramble game:")
+print('\t1) "{}" with {} pieces.'.format(amounts_pairs[0][0], amounts_pairs[0][1]))
+print('\t2) "{}" with {} pieces.'.format(amounts_pairs[1][0], amounts_pairs[1][1]))
+print('\t3) "{}" with {} pieces.'.format(amounts_pairs[2][0], amounts_pairs[2][1]))
+print('\t4) "{}" with {} pieces.'.format(amounts_pairs[3][0], amounts_pairs[3][1]))
+
+ratios_pairs = [
+    [letters[0], ratios[0]],
+    [letters[1], ratios[1]],
+    [letters[2], letters[2]],
+    [letters[3], ratios[3]],
+    [letters[4], ratios[4]],
+    [letters[5], ratios[5]],
+    [letters[6], ratios[6]],
+    [letters[7], ratios[7]],
+    [letters[8], ratios[8]],
+    [letters[9], ratios[9]],
+    [letters[10], ratios[10]],
+    [letters[11], ratios[11]],
+    [letters[12], ratios[12]],
+    [letters[13], ratios[13]],
+    [letters[14], ratios[14]],
+    [letters[15], ratios[15]],
+    [letters[16], ratios[16]],
+    [letters[17], ratios[17]],
+    [letters[18], ratios[18]],
+    [letters[19], ratios[19]],
+    [letters[20], ratios[20]],
+    [letters[21], ratios[21]],
+    [letters[22], ratios[22]],
+    [letters[23], ratios[23]],
+    [letters[24], ratios[24]],
+    [letters[25], ratios[25]],
+]
+ratios_pairs.sort(key=lambda x: str(x[1]))
+
+print("The lowest ratio in the scramble game:")
+print('\t1) "{}" with {} percent.'.format(ratios_pairs[0][0], ratios_pairs[0][1]))
+print('\t2) "{}" with {} percent.'.format(ratios_pairs[1][0], ratios_pairs[1][1]))
+print('\t3) "{}" with {} percent.'.format(ratios_pairs[2][0], ratios_pairs[2][1]))
+print('\t4) "{}" with {} percent.'.format(ratios_pairs[3][0], ratios_pairs[3][1]))
